@@ -13,7 +13,8 @@ async function searchCity(city){
     let data = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + 
     city + 
     "&appid=" + 
-    key 
+    key +
+    "&units=metric"
     )
     .then(response => response.json())
 
